@@ -1,0 +1,37 @@
+.widget {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    @include font(16px, 24px);
+    font-style: normal;
+    font-weight: 400;
+    color: $basic-black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+    background-color: $light-grey;
+    position: relative;
+  }
+  
+  .widget__title {
+    @include font (20px, 24px);
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $special-yellow;
+  }
+  
+  .widget__btn {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: 6px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  
+    &:focus svg,
+    &:hover svg {
+      opacity: 0.7;
+    }
+  }

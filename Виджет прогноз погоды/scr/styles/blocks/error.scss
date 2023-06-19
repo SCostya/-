@@ -1,0 +1,18 @@
+.error {
+    position: fixed;
+    text-align: center;
+    background-color: $basic-grey;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    border: 3px solid $special-red;
+    @include font(30px, 34px);
+    color: $basic-white;
+    z-index: 10;
+  }
+  
+  .error__message {
+    margin: 0;
+    padding: 0;
+  }
